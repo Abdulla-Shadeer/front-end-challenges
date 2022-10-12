@@ -1,0 +1,337 @@
+<!DOCTYPE html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark landing page</title>
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <!--font awesome icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+  <!--local css-->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+<body>
+
+  <!-- **********************  navbar and logo*************************** -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container fluid">
+
+      <img class="navbar-brand" src="images/logo-bookmark.svg" alt="logo">
+
+      <!--- *********** navbar togler button ************** -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--- *********** navbar items ************** -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-4">
+            <a class="my-nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="my-nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="my-nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item px-4">
+              <button class="btn-red"> Login </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--************************************************* header section **************************************-->
+  <section id="header">
+  <div class="col-container">
+  <div class="row">
+    <div class="my-col">
+      <h1 class="header-txt header-h1">A Simple Bookmark Manager</h1>
+      <br>
+      <p class="header-txt">A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.</p>
+      <br>
+      <button class="my-btn-dark"> Get It On Chrome </button>
+      <button class="my-btn-light"> Get It On Firefox </button>
+    </div>
+
+    <div class="my-col">
+      <img class="my-svg" src="images/illustration-hero.svg" alt="">
+    </div>
+  </div>
+  </div>
+</section>
+
+  <!--************************************************** middle section **********************************************-->
+  <section id="features">
+    <h2 class="features-txt">Features</h2>
+    <br>
+    <p class="features-txt">Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openFeature(event, 'Simple-Bookmarking')" id="defaultOpen">Simple Bookmarking</button>
+      <button class="tablinks" onclick="openFeature(event, 'Speedy-Searching')">Speedy Searching</button>
+      <button class="tablinks" onclick="openFeature(event, 'Easy-Sharing')">Easy Sharing</button>
+    </div>
+    
+
+
+    <!-- ******** tab one ********* -->
+
+    <div id="Simple-Bookmarking" class="tabcontent">
+      <div class="col-container-tab">
+      <div class="row">
+
+        <div class="my-col my-col-tab">
+          <img class="my-svg-tab" src="images/illustration-features-tab-1.svg" alt="">
+        </div>
+
+        <div class="my-col my-col-tab">
+          <h3 class="tab-txt">Bookmark in one click</h3>
+          <p class="tab-txt">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.
+          </p>
+        <button class="my-btn-dark"> More info </button>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    
+
+
+    <!--******** tab two *********-->
+
+    <div id="Speedy-Searching" class="tabcontent">
+      <div class="col-container-tab">
+      <div class="row">
+
+        <div class="my-col my-col-tab">
+          <img class="my-svg-tab" src="images/illustration-features-tab-2.svg" alt="">
+        </div>
+
+        <div class="my-col my-col-tab">
+          <h3 class="tab-txt">Intelligent search</h3>
+          <p class="tab-txt">Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.
+          </p>
+        <button class="my-btn-dark"> More info </button>
+        </div>
+      </div>
+      </div> 
+    </div>
+    
+
+
+    <!--******* tab three ***********-->
+
+    <div id="Easy-Sharing" class="tabcontent">
+      <div class="col-container-tab">
+      <div class="row">
+
+        <div class="my-col my-col-tab">
+          <img class="my-svg-tab" src="images/illustration-features-tab-3.svg" alt="">
+        </div>
+
+        <div class="my-col my-col-tab">
+          <h3 class="tab-txt">Share your bookmarks</h3>
+          <p class="tab-txt">Easily share your bookmarks and collections with others. Create a shareable 
+            link that you can send at the click of a button.
+          </p>
+        <button class="my-btn-dark"> More info </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!--****** javascript for the tab ******-->
+    <script>
+      function openFeature(evt, featureName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(featureName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+      </script>
+
+  </section>
+
+
+  <!--*********************************************** bottom section ***************************************-->
+
+  <section id="download">
+
+    <h2 class="features-txt">  Download the extension </h2>
+    <br>
+    <p class="features-txt">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.
+    </p>
+
+    <div class="row cart-container justify-content-center">
+      <div class="cart Chrome">
+        <img class="my-svg-dwnld" src="images/logo-chrome.svg" alt="">
+        <br>
+        <h4>Add to Chrome</h4>
+        <p>Minimum version 6.2</p>
+        <br>
+        <img class="my-svg" src="images/bg-dots.svg" alt="">
+        <button class="my-btn-dark my-btn-block">
+          Add and install Extension
+        </button>
+      </div>
+
+      <div class="cart firefox">
+        <img class="my-svg-dwnld" src="images/logo-firefox.svg" alt="">
+        <br>
+        <h4>Add to Firefox</h4>
+        <p>Minimum version 5.5</p>
+        <br>
+        <img class="my-svg" src="images/bg-dots.svg" alt="">
+        <button class="my-btn-dark my-btn-block">
+          Add and install Extension
+        </button>
+      </div>
+      
+      <div class="cart opera">
+        <img class="my-svg-dwnld" src="images/logo-opera.svg" alt="">
+        <br>
+        <h4>Add to Opera</h4>
+        <p>Minimum version 4.6</p>
+        <br>
+        <img class="my-svg" src="images/bg-dots.svg" alt="">
+        <button class="my-btn-dark my-btn-block">
+          Add and install Extension
+        </button>
+      </div>
+    </div>
+
+    </section>
+
+
+
+  <!--************************************************ FAQ section ********************************************-->
+  <section id="faq">
+    <h2 class="features-txt"> Frequently asked Questions </h2>
+    <br>
+    <p class="features-txt">Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.
+    </p>
+
+
+  <!--******** faq vertical tabs**********-->
+<div class="faq-container">
+  <!--******** question 1 *******-->
+  <button class="accordion">What is Bookmark?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+    </div>
+
+<!--******** question 2 *******-->
+  <button class="accordion">How can I request a new browser?</button>
+    <div class="panel">
+      <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+    </div>
+
+<!--******** question 3 *******-->
+  <button class="accordion">Is there a mobile app?</button>
+    <div class="panel">
+      <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.</p>
+    </div>
+
+<!--******** question 4 *******-->
+  <button class="accordion"> What about other Chromium browsers?</button>
+    <div class="panel">
+      <p> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod 
+          dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    </div>
+</div>
+<button class="my-btn-dark"> More info </button>
+
+<!--******* java script for faq ***********-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</section>
+
+
+<!--********************************************************* footer section ************************************* -->
+<section id="footer">
+  <p> 35,000 + ALREADY JOINED</p>
+  <br>
+  <h2>Stay up-to-date with what we’re doing</h2>
+  <input type="email" name="email" id="email">
+  <button class="btn-red"> Contact </button>
+</section>
+
+<!--********** footer links *************-->
+<div id="footer-link-container">
+  <div class="link-container">
+      <img class="bottom-logo" src="images/logo-bookmark.svg" alt="">
+      <a href="#features"> Features </a>
+      <a href="#download"> Download </a>
+      <a href="#faq"> FAQs </a>
+  </div>
+  <div class="icon-container">
+    <a href="#"> <i class="fab fa-facebook-f social-icon"> </i> </a>
+    <a href="#"> <i class="fab fa-twitter social-icon"> </i> </a>
+</div>      
+</div>
+
+<!--********** copyright and attribution ***********-->
+<div id="attribution">
+<p class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Abdullah Shadeer</a>
+</p>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous">
+</script>
+
+</body>
+</html>

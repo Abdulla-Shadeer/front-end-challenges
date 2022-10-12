@@ -1,0 +1,388 @@
+/******************* Large Devices *******************/
+/*###################################################*/
+
+
+/*global*/
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*to make svg responsive*/
+.my-svg{
+    max-width:100%;
+}
+
+/*while 100% width the raw class produce unnecessory margins from left and right*/
+.row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*navigation area*/
+.nav{
+    padding: 2% 0;
+}
+
+.button-small-outline{
+    position: relative;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 20px;
+    padding: 0.6% 5%;
+    font-size: 1.1em;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+}
+.button-small-outline:hover{
+    color: hsl(321, 100%, 78%);
+    border-color: hsl(321, 100%, 78%);
+}
+.top-btn{
+    text-align: right;
+}
+
+
+/*header section*/
+#top{
+    text-align: center;
+}
+.header{
+    text-align: center;
+    padding: 5% 0 5%;
+}
+.header-h2{
+    width: 80%;
+    margin: 0 auto;
+}
+.header-p{
+    font-weight: 600;
+    width: 45%;
+    margin: 1% auto;
+}
+.button-color-large{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 0.85% 3.5%;
+    margin-top: 3%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+}
+.button-color-large:hover{
+    background-color: hsl(321, 100%, 78%);
+}
+
+
+/*features ares*/
+.features{
+    padding: 6% 0;
+}
+.features-h1{
+    padding-top: 2%;
+}
+.col-features{
+    display: inline;
+    position: relative;
+    width: 50%;
+
+}
+
+/*middle section*/
+#middle{
+    text-align: center;
+}
+#section-bg{
+    background-color: hsl(207, 100%, 98%);
+}
+.bg-svg{
+    position: relative;
+    width: 100%;
+}
+.middle-section-row{
+    text-align: left;
+}
+.margin-row{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.text-col{
+    padding:5%;
+}
+.col-middle{
+    position: relative;
+    display: block;
+    width: 50%;
+}
+.middle-p{
+    width: 75%;
+}
+.img-col{
+    margin: auto;
+    padding: 10px;
+}
+.cta-h2{
+    margin-top: 6%;
+}
+.btn-bottom{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+/*footer section*/
+.bg-footer{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+#footer{
+    background-color: hsl(192, 100%, 9%);
+    color: lightgray;
+}
+.footer-logo{
+    background-color: hsl(207, 100%, 98%);
+    padding: 2% 3%;
+    width: 26%;
+    border-radius: 15px;
+}
+.footer-h2{
+    font-size: 1.6em;
+}
+.footer-p{
+    width: 70%;
+    margin: 4% 0;
+}
+#email{
+    border: none;
+    border-radius: 10px;
+    padding: 1.1% 2%;
+}
+.btn-subscribe{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(207, 100%, 98%);
+    border: none;
+    border-radius: 10px;
+    padding: 1.1% 4%;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+}
+.btn-subscribe:hover{
+    background-color: hsl(321, 100%, 78%);
+}
+
+
+/*copyright area*/
+footer{
+    margin-top: 4%;
+    background-color: aliceblue;
+}
+.attribution{
+    color:hsl(192, 100%, 9%);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    padding: 1% 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+
+
+/***************** Mobile Devices ******************/
+/*#################################################*/
+@media only screen and (max-width:576px) {
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    .nav{
+        width: 90%;
+        padding-top: 5%;
+    }
+    .logo{
+        width: 70%
+    }
+    .button-small-outline{
+        border-radius: 15px;
+        padding: 0.6% 6%;
+        font-size: 0.9em;
+        font-weight: 400;   
+    }
+    .header{
+        margin: 10% auto 0;
+        width: 80%;
+    }
+    .header-p{
+        width: 100%;
+        margin: 7% 0 15%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .button-color-large{
+        font-size: 0.9em;
+        padding: 1.9% 5%;
+        margin-bottom: 7%;
+    }
+    .col-features{
+        display: block;
+        width: 100%;
+    }
+    .col-middle{
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .middle-p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .cta-h2{
+        margin-top: 10%;
+    }
+    .footer-logo{
+        width:45%;
+        margin: 5% 0 1%;
+    }
+    #footer{
+        text-align: center;
+    }
+    .footer-p{
+        width: 100%;
+        margin: 1% auto 0;
+    }
+    .footer-p-1{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .footer-p-2{
+        margin-bottom: 4%;
+    }
+    .footer-h2{
+        font-size: 1em;
+        margin-top: 22%;
+    }
+    #email{
+        padding: 1.5% 4%;
+        margin: 1.5% 2% 3%;
+        font-size: 0.9em;
+    }
+    .btn-subscribe{
+        padding: 1.5% 7%;
+        font-size: 0.9em;
+        margin: 1.5% 2%;
+    }
+    .attribution{
+        margin-top: 7%;
+        font-size: 0.7em;
+    }
+}
+
+
+
+/***************** Medium Devices ******************/
+/*#################################################*/
+@media only screen and (max-width:960px) and (min-width:577px) {
+    h2{
+        font-size: 1.65em;
+    }
+    .logo{
+        width: 42%;
+    }
+    .button-small-outline{
+        padding: 0.8% 5%;
+        font-size: 14px;
+    }
+    .nav{
+        margin-bottom: 4%;
+    }
+    .header-p{
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .button-color-large{
+        font-size: 1em;
+    }
+    .middle-p{
+        width: 100%;
+    }
+    .cta-h2{
+        margin-top: 7%;
+    }
+    .btn-bottom{
+        margin-bottom: 7%;
+    }
+    .footer-h2{
+        font-size: 1.1em;
+    }
+    .footer-p{
+        width: 85%;
+        font-size: 12px;
+    }
+    .footer-p-1{
+        margin-bottom: 15%;
+    }
+    .footer-p-2{
+        margin-bottom: 15%;
+    }
+    .btn-subscribe{
+        margin-top: 2%;
+    }
+    .attribution{
+        font-size: 12px;
+    }
+}
+
+
+
+/***************** standard Devices ******************/
+/*#################################################*/
+@media only screen and (min-width:961px) and (max-width:1366px) {
+    .logo {
+        width: 40%;
+    }
+    .header-p{
+        margin-bottom: 7%;
+    }
+    .button-color-large{
+        padding: 0.8% 3%;
+        font-size: 16px;
+    }
+    .cta-h2{
+        margin-top: 7%;
+    }
+    .btn-bottom{
+        margin-bottom: 5%;
+    }
+    .footer-logo{
+        width: 25%;
+    }
+    .footer-h2{
+        font-size: 1.5em;
+    }
+    .footer-p{
+        font-size: 14px;
+    }
+    .attribution{
+        font-size: 14px;
+    }
+}

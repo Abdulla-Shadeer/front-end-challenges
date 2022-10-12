@@ -1,0 +1,437 @@
+/******************* standard devices ********************/
+
+/********** global ***********/
+body{
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.my-svg{
+    width: 100%;
+}
+
+
+
+/******* navigation manu ********/
+.btn-red {
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+    padding: 8px 30px;
+}
+.btn-red:hover{
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+}
+.my-nav-link{
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: #1a1a1a;
+}
+.my-nav-link:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+
+/****** header section ********/
+.col-container{
+    width: 80%;
+    margin: 5% auto auto;
+}
+.my-col{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    padding: 5% 0;
+}
+.header-txt{
+    width: 80%;
+}
+.my-btn-dark {
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+}
+.my-btn-light {
+    color: #1a1a1a;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;    
+}
+.my-btn-dark:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+.my-btn-light:hover {
+    background-color: white;
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+
+/* middle section */
+
+#features{
+    margin: 5% auto 7%;
+}
+.features-txt{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.tab {
+    margin-top: 2%;
+    overflow: hidden;
+    text-align: center;
+}
+.tab button {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 500;
+}
+.tab button:hover {
+    color: hsl(0, 94%, 66%);
+}
+.tab button.active {
+    border-bottom: 3px solid hsl(0, 94%, 66%);
+}
+.col-container-tab{
+    width: 80%;
+    margin: 1% auto 0;
+}
+.my-col-tab{
+    padding: 5%;
+}  
+.my-svg-tab{
+    width: 80%;
+    float: right;
+}
+.tab-txt {
+    width: 90%;
+}
+  .tabcontent {
+    display: none;
+    padding: 0 12px;
+  }
+
+
+
+/******** donwload section **********/
+.cart-container{
+    width: 80%;
+    margin: 2% auto;
+}
+.cart{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    box-shadow: 5px 6px 10px lightgray;
+    margin: 2%;
+}
+.my-svg-dwnld {
+    width: 30%;
+    margin: 15%;
+}
+.my-btn-block{
+    margin: 5% auto;
+}
+.Chrome {
+    margin-bottom: 14%;
+}
+.firefox {
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+.opera {
+    margin-top: 14%;
+}
+h4 {
+    font-size: 20px;
+}
+.cart p {
+    font-size: 13px;
+}
+
+
+/******** FAQs Section **********/
+#faq {
+    margin: 7% auto;
+    text-align: center;
+}
+.faq-container{
+    width: 50%;
+    margin: 3% auto;
+}
+.accordion {
+    background-color: white;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    color:hsl(0, 94%, 66%);
+  }
+  
+  .accordion:after {
+    content: '\02c5';
+    color: #1a1a1a;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  #faq .active:after {
+    content: "\02c4";
+    color: hsl(0, 94%, 66%);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+  }
+ 
+
+
+/********** footer section **********/
+#footer h2{
+    width: 40%;
+    margin: 0 auto 2%;
+}
+#footer {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+#footer input{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+}
+#footer-link-container{
+    padding: 5px 0 0;
+    background-color: hsl(229, 31%, 21%);
+}
+.link-container{
+    width: 80%;
+    margin: 0 auto;
+}
+#footer-link-container a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+.bottom-logo{
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
+}
+#footer-link-container a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.icon-container{
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+
+}
+.social-icon{
+    color: hsl(229, 31%, 21%);
+}
+.social-icon:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+
+
+#attribution{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    padding-top: 0;
+}
+.attribution{
+    margin: 0;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(231, 69%, 60%);
+}
+.attribution a:hover{
+    color: hsl(0, 94%, 66%);
+}
+#mobile-links{
+    display: none;
+}
+
+
+
+
+/**************** mobile devices ****************/
+/************************************************/
+
+@media only screen and (max-width:576px) {
+    .my-col {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    #header {
+        text-align: center;
+    }
+    .header-h1{
+        width: 100%;
+    }
+    .header-txt{
+        margin: 0 auto;
+    }
+    .features-txt{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #features{
+        margin-bottom: 15%;
+        background-color:aliceblue;
+        padding: 10% 0 6%;
+    }
+    .tab button{
+            background-color:aliceblue;
+    }
+    .cart{
+        display: block;
+        position: relative;
+        width: 75%;
+    }
+    #faq{
+        margin-top: 15%;
+        background-color:aliceblue;
+        padding: 10% 0 15%;
+        margin-bottom:0;
+    }
+    .panel{
+    background-color:aliceblue;
+    }
+    .accordion {
+    background-color: aliceblue;
+    }
+    .faq-container{
+        width: 80%;
+    }
+    #footer p{
+        margin-top: 10%;
+    }
+    #footer h2{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    #footer input{
+        display: block;
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    #footer button{
+        margin-bottom: 10%;
+    }
+    #footer-link-container{
+        text-align: center;
+    }
+    .attribution{
+        font-size: 12px;
+    }
+}
+
+
+
+
+/************ medium devices *************/
+@media only screen and (min-width:577px) and (max-width:960px) {
+    .header-txt{
+        width: 100%;
+    }
+    .features-txt{
+        width: 80%;
+    }
+    .col-container-tab{
+        width: 80%;
+        margin: 1% auto 0;
+    }
+    .my-col-tab{
+        padding: 2%;
+        padding-top: 5%;
+    }  
+    .my-svg-tab{
+        width: 100%;
+        float: right;
+    }
+    .tab-txt {
+        width: 100%;
+    }
+    #download{
+        margin-top: 15%;
+    }
+    .cart{
+        display: inline-block;
+        position: relative;
+        width: 45%;
+    }
+    .Chrome {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .firefox {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .opera {
+        margin-top: 10px;
+    }
+    #faq{
+        margin-top: 15%;
+    }
+    .faq-container{
+        width: 70%;
+    }
+    #footer h2{
+        width: 80%;
+        margin: 0 auto 5%;
+    }
+    #footer{
+        padding-bottom: 10%;
+    }
+}

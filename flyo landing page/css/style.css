@@ -1,0 +1,296 @@
+/************************* global ****************************/
+.my-svg{
+    width: 100%;
+}
+section{
+    padding: 5% 0;
+}
+
+/************************* nav manu ****************************/
+#nav{
+    padding: .5% 0;
+}
+.my-navbar{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    width:100px;
+    padding: 1%;
+    background-color: white;
+    border-radius: 5px;
+}
+.link-container{
+    float: right;
+}
+.my-nav-link{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 7px;
+}
+.my-nav-link:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+/************************* hero section ************************/
+.row{
+    width: 80%;
+    margin: 0 auto;
+}
+.my-col{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    padding: 2%;
+}
+input{
+    padding: 1% 3%;
+    border: 1px solid hsl(224, 93%, 58%);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.my-btn-primary{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: 1px solid hsl(224, 93%, 58%);
+    border-radius: 5px;
+    padding: 1% 3%;
+    margin: 5px;
+}
+.my-btn-primary:hover{
+    background-color: hsl(224, 83%, 68%);
+}
+
+
+
+/*********************** testimonial ****************/
+#testimonials{
+    background-color: hsl(240, 75%, 98%);
+    color: black;
+}
+.my-btn-custom1{
+    background-color: hsl(240, 75%, 98%);
+    color: hsl(170, 45%, 43%);
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+.my-btn-custom1:hover{
+    color: hsl(170, 25%, 73%);
+    border-color: hsl(170, 25%, 73%);
+}
+.testimonial-cart{
+    padding: 2%;
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 4px 6px 15px lightgray;
+}
+.testimonial-cart p{
+    margin: 0;
+}
+#avatar{
+    width: 47px;
+    border: none;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    padding: 1%;
+}
+#profile{
+    padding: 10% 0 5%;
+}
+#profile p{
+    display: inline-block;
+}
+.mini-title{
+    font-size: 12px;
+}
+
+
+
+/****************** cta section *****************/
+#cta{
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+}
+#email-block{
+    display: block;
+    width: 100%;
+}
+
+
+
+/***************** footer section ****************/
+#footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+.my-col-custom{
+    width: 25%;
+}
+.footer-logo{
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.icon{
+    margin-right: 10px;
+}
+.my-col-custom a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.my-col-custom a:hover{
+    color: hsl(224, 83%, 68%);
+}
+.social{
+    margin: 0 30px;
+}
+.my-col-custom img:hover{
+    padding: 3%;
+    background-color: hsl(224, 83%, 68%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#attribution {
+    background-color: white;
+    color: black;
+    padding: 1%;
+}
+.attribution{
+    margin: 0;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(224, 93%, 58%);
+}
+.attribution a:hover{
+    color: hsl(224, 83%, 68%);
+}
+
+
+
+/******************** mobile *********************/
+/*************************************************/
+@media only screen and (max-width:576px) {
+    /****** mobile global ******/
+    section{
+        padding: 10% 0;
+    }
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .my-col{
+        display: block;
+        width: 100%;
+    }
+    input{
+        display: block;
+        width: 80%;
+        margin: 5px auto;
+        padding: 3% 3%;
+        font-size: 13px;
+    }
+    .my-btn-primary{
+        display: block;
+        font-size: 13px;
+        width: 80%;
+        padding: 3% 3%;
+        margin: 5px auto;
+    }
+
+
+    /****** nav and hero section *******/
+    #nav{
+        padding: 5% 0;
+    }
+    .logo{
+        width: 70px;
+    }
+    .my-nav-link{
+        font-size: 13px;
+    }
+    .row-hero{
+        text-align: center;
+    }
+    .row-hero h1{
+        font-weight: bold;
+    }
+
+
+    /****** testimonials ********/
+    #testimonials h1{
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    .my-btn-custom1{
+        font-size: 13px;
+    }
+    .testimonial-cart{
+        width: 100%;
+    }
+
+
+    /******* cta section *******/
+    #cta h2{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #email-block{
+        width: 80%;
+    }
+
+
+    /******* footer section *******/
+    #footer .row{
+        width: 95%;
+    }
+    .my-col-custom{
+        width: 50%;
+    }
+    .my-col-custom p{
+        margin-bottom: 0;
+        margin: 5px 0;
+    }
+    .my-col-custom a{
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .my-col-custom img{
+        width: 10px;
+    }
+    .social{
+        margin: 0 10px;
+    }
+    .my-col-custom .footer-logo{
+        width: 70px;
+    }
+
+
+    /****** attribution *******/
+    .attribution{
+        font-size: 12px;
+    }
+}
+
+
+/****** extra small screens *******/
+@media only screen and (max-width:300px){
+    .my-col-custom{
+        width: 100%;
+    }
+}
